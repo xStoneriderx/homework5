@@ -24,7 +24,7 @@ describe("arraySumPositive function", function() {
   });
 
 });
-xdescribe("removeNumbers function", function() {
+describe("removeNumbers function", function() {
 
   it("should return string without numbers", function() {
     expect(removeNumbers("123456789")).toEqual("");
@@ -33,7 +33,7 @@ xdescribe("removeNumbers function", function() {
     expect(removeNumbers(" ")).toEqual(" ");
   });
 });
-xdescribe("getAverage function", function() {
+describe("getAverage function", function() {
   it("should return  the average of the given array rounded downward to its nearest integer", function() {
     expect(getAverage([2,2,2,2])).toEqual(2);
     expect(getAverage([1,2,3,4,5])).toEqual(3);
@@ -41,11 +41,11 @@ xdescribe("getAverage function", function() {
   });
 
 });
-xdescribe("sumArray function", function() {
+describe("sumArray function", function() {
   it("should return sum all the numbers of the array except the highest and the lowest element (the value, not the index!)", function() {
-    expect(getAverage([2,2,2,2])).toEqual(2);
-    expect(getAverage([1,2,3,4,5])).toEqual(3);
-    expect(getAverage([1,1,1,1,1,1,1,2])).toEqual(1);
+    expect(getAverage([1,2,3,4])).toEqual(5);
+    expect(getAverage([1,1,3,4,5])).toEqual(8);
+    expect(getAverage([1,2,3,4,5,5])).toEqual(14);
   });
 
 });

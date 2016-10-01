@@ -8,15 +8,27 @@ function opposite(number) {
 function arraySumPositive(arr){
   //You get an array of numbers, return the sum of all of the positives ones.
   //Example [1,-4,7,12] => 1 + 7 + 12 = 20
-  return ;
+  var sum = 0;
+  arr.forEach(function (item) {
+    if (item > 0) sum += item;
+  });
+  return sum;
 }
 function removeNumbers(str){
   //should remove all numbers from string
-  //return
+  newString = str.replace(/[0-9]/g, '');
+  return newString;
 }
 function getAverage(marks){
   //TODO : calculate the downwar rounded average of the marks array
   //return Math.round(marks.reduce(function(prev, curr){ return prev + curr},0)/marks.length)
+  var sum = 0;
+  var i = 0;
+  marks.forEach(function (item) {
+    sum += item;
+    i++;
+  });
+  return Math.round(sum/i);
 }
 function sumArray(array) {
   //Sum all the numbers of the array except the highest and the lowest element (the value, not the index!).
